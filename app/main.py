@@ -32,4 +32,4 @@ async def get_name_by_id(id: int):
 
 @app.get("/v1/__health")
 async def get_health():
-    return 200
+    return "200"
