@@ -29,3 +29,7 @@ async def get_name_by_id(id: int):
         return result[0]
     else:
         raise HTTPException(status_code=404, detail="Name not found")
+
+@app.get("/v1/__health")
+async def get_health():
+    return 200
